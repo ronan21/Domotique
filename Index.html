@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/info.css" />
 		<script type="text/javascript" src="./js/menuh.js"></script>
 		<script type="text/javascript" src="./js/menuv.js"></script>
+		<script type="text/javascript" src="./js/Scheduler.js"></script>
 		<script type="text/javascript" src="./js/admin.js"></script>
 	</head>
 	<body>
@@ -23,7 +24,30 @@
 		<!-- Nouvelle déclaration du codage de la page -->
 		<div id='Scheduler' class="hidden">
 			<div class='data'>
-			Schedule
+			<table BORDER=1 id='tabscheduler' align='center'>
+				<thead>
+					<tr>
+						<th>Minutes (de 0 à 59)</th>
+						<th>Heure (de 0 à 23)</th>
+						<th>numéro du jour du mois (de 1 à 31)</th>
+						<th> numéro du mois (de 1 à 12)</th>
+						<th>numéro du jour dans la semaine (1-lundi 7-dimanche)</th>
+						<th>Tâches</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th><input type="text" id="minutes0"/></th>
+						<th><input type="text" id="heure0"/></th>
+						<th><input type="text" id="numjour0"/></th>
+						<th><input type="text" id="nummois0"/></th>
+						<th><input type="text" id="jsemaines0"/></th>
+						<th><input type="text" id="Taches0"/></th>
+						<th><input type="button" id="bouton0" value="ajout" onClick='javascript:schedulajout()'/></th>
+					</tr>
+				</tbody>
+			</table>
 			</div>
 		</div>
 		<!-- Nouvelle déclaration du codage de la page -->
