@@ -1,8 +1,90 @@
-<HTML>
-<HEAD>
-<TITLE>Ronan Perso</TITLE>
-</HEAD>
-<BODY>
-Pages personnel
-</BODY>
-</HTML>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=windows-1250">
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="./css/main.css" />
+		<link rel="stylesheet" type="text/css" href="./css/info.css" />
+		<script type="text/javascript" src="./js/menuh.js"></script>
+		<script type="text/javascript" src="./js/menuv.js"></script>
+		<script type="text/javascript" src="./js/admin.js"></script>
+	</head>
+	<body>
+	<div id='head'><H1>Home</H1></div>
+	<div id='menuh'>
+	</div>
+	<div id='corp'>
+		<!-- Nouvelle déclaration du codage de la page -->
+		<div id='Home' class="visible">
+			<div class='data'>
+			Home
+			</div>
+		</div>
+		<!-- Nouvelle déclaration du codage de la page -->
+		<div id='Scheduler' class="hidden">
+			<div class='data'>
+			Schedule
+			</div>
+		</div>
+		<!-- Nouvelle déclaration du codage de la page -->
+		<div id='Alert' class="hidden">
+			<div class='data'>
+			Alert
+			</div>
+		</div>
+		<!-- Nouvelle déclaration du codage de la page -->
+		<div id='Admin' class="hidden">
+			<div id='menuv' class='menuv'>
+
+				<!-- <H1><a href="#"><b>Module</b></a></H1>
+					<H1><a href="#"><b>Piece</b></a></H1>
+					<H1><a href="#"><b>Email</b></a></H1>
+					<H1><a href="#"><b>Ifft</b></a></H1>
+				-->
+			</div>
+			<div class='data'>
+				<div id='Module'>
+				</div>
+				<div id='piece' class="hidden">
+				<h2>Room</h2>
+					<form method="post" name="maison">
+						<fieldset>
+						<select multiple id="piece" name="piece">
+							<option value="Salon">Salon</option>
+							<option value="Chambre">Chambre</option>
+						</select>
+						<input type="text" name="room"/>
+						<input type="button" value="Ajouter" onClick="javascript:ajouterroom()"/>
+						<input type="button" value="Supprimer" onClick="javascript:supprimerroom()"/>
+						</fieldset>
+						<input type="button" value="sauvegarder" onClick="javascript:enregistrerroom()"/>
+					</form>
+				</div>
+				<div id='Email' class="hidden">
+					<h2>Email parameter</h2>
+						<br>
+						<FORM method=post align='left'>
+						Adresse email: <input name="email"><BR>
+						Mot de Passe: <input type="password" name="mdp"><BR>
+						<input type="button" value="enregistrer">
+						</FORM>
+				</div>
+				<div id='IFTTT' class="hidden">
+					<h2>IFTTT parameter</h2>
+						<br>
+						<FORM method=post align='left'>
+						Adresse email: <input name="email"><BR>
+						Mot de Passe: <input type="password" name="mdp"><BR>
+						<input type="button" value="enregistrer">
+						</FORM>
+				</div>
+			</div>
+		</div>
+	</div>
+				<script>
+				menuhload();
+				menuvloadadmin();
+				</script>
+	<div id='foot'>foot</div>
+	</body>
+</html>
